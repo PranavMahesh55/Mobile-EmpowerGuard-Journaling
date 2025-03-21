@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# EmpowerGuard Journaling
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**EmpowerGuard Journaling – Unlock Your Emotions, Empower Your Future.**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Inspiration
 
-### `npm start`
+EmpowerGuard Journaling was born out of the urgent need to provide accessible emotional support for young people and individuals facing domestic abuse. With nearly 1 in 5 young people experiencing significant mental health challenges every day—and with domestic abuse often going unrecognized until it’s too late—our mission is to transform these statistics into actionable insights. We believe that early support and self-awareness can truly change lives.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## What It Does
 
-### `npm test`
+- **Journal Page:**  
+  Write, edit, and save your thoughts in an intuitive rich text editor. As you journal, our AI (powered by LangChain and OpenAI) analyzes your entries in real time to detect your emotional tone and provide personalized recommendations.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Home Page:**  
+  Browse previous entries with a powerful search bar. Each entry can be expanded to reveal detailed insights—including the detected emotional tone and actionable recommendations—and even deleted if needed.
 
-### `npm run build`
+- **Dashboard:**  
+  Visualize your emotional journey with interactive charts, overall emotion summaries, and individual mood meters. See your tone trends over time, helping you track your mental well-being.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Profile Page:**  
+  Manage your personal details and customize your experience. Your profile settings persist between sessions, ensuring a personalized experience every time you log in.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Built With
 
-### `npm run eject`
+- **Frontend:**  
+  - **React:** For building a dynamic, responsive user interface.  
+  - **React Router:** For seamless navigation between pages.  
+  - **React Quill:** For a rich text editor on the Journal page.  
+  - **Chart.js:** For interactive data visualizations on the Dashboard.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Backend:**  
+  - **Node.js & Express:** For building a robust REST API.  
+  - **Mongoose:** For interacting with MongoDB.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Database:**  
+  - **MongoDB Atlas:** For scalable data storage.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **AI & NLP:**  
+  - **LangChain & OpenAI API:** For advanced text-based tone analysis and personalized recommendations.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Other Tools:**  
+  - **dotenv:** For secure management of environment variables.  
+  - **Git & GitHub:** For version control and collaboration.  
+  - **face-api.js:** For potential future camera-based facial emotion analysis.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Backend
 
-### Code Splitting
+1. **Clone the Repository:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   git clone https://github.com/yourusername/EmpowerGuard-Journaling.git
+   cd EmpowerGuard-Journaling/empowerguard-backend
 
-### Analyzing the Bundle Size
+2.	Install Dependencies: npm install
+3.	Set Up Environment Variables:MONGO_CONNECTION_STRING="your_mongodb_connection_string"
+PORT=5001
+OPENAI_API_KEY="your_openai_api_key"
+4. Start the Backend Server: node server.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Frontend
+1.	Navigate to the Frontend Folder: cd ../frontend
+2.	Install Dependencies:npm install
+3.	Start the Frontend: npm start
